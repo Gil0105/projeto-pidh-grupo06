@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/signUpPage/fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Cadastro</h1>
+        <form action="" class="form-client-signUp">
+            <div class="access-data">
+                <h2><i class="fa-solid fa-user"></i> Dados para acesso</h2>
+                <hr>
+                <div class="row-signUp">
+                    <div>
+                        <label for="email"><i class="fa-solid fa-envelope"></i> E-mail</label>
+                        <input id="email" maxlength="128" name="email" placeholder="Digite o seu email" type="text" class="input-signUp">
+                    </div>
+                    <div>
+                        <label for="email-confirmation"><i class="fa-solid fa-envelope"></i> Confirmar E-mail</label>
+                        <input id="email-confirmation" maxlength="128" name="email" placeholder="Digite o seu email" type="email" class="input-signUp">
+                    </div>
+                </div>
+                <div class="row-signUp">
+                    <div>
+                        <label for="password"><i class="fa-solid fa-lock"></i> Criar senha</label>
+                        <input id="password" maxlength="128" name="password" placeholder="Digite sua senha" type="password" class="input-signUp">
+                    </div>
+                    <div>
+                        <label for="password-confirmation"><i class="fa-solid fa-lock"></i> Confirmar Senha</label>
+                        <input id="password-confirmation" maxlength="128" name="password-confirmation" placeholder="Digite sua senha" type="password" class="input-signUp">
+                    </div>
+                </div>
+            </div>
+            <div class="duoForm">
+                <div class="personal-data">
+                    <h2><i class="fa-solid fa-bars"></i> Dados pessoais</h2>
+                    <hr>
+                    <div>
+                        <label for="name">Nome Completo</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="cpf">CPF</label>
+                        <input type="tel" name="cpf" id="cpf" maxlength="14">
+                    </div>
+                    <div>
+                        <label for="celular">Celular</label>
+                        <input type="tel" name="celular" id="celular" maxlength="15">
+                    </div>
+                    <div>
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo" id="sexo">
+                            <option value="" selected="selected"> - Selecione - </option>
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="birthdayDate">Data de Nascimento</label>
+                        <input type="date" name="birthdayDate" id="birthdayDate" maxlength="15">
+                    </div>
+                </div>
+                <div class="adress-container"> 
+                    <h2><i class="fa-solid fa-location-dot"></i> Endereço</h2>
+                    <hr>  
+                    <div>
+                        <label for="cep">CEP</label>
+                        <input type="number" name="cep" id="cep" maxlength="9">
+                    </div>
+                    <div>
+                        <label for="adress">Endereço</label>
+                        <input type="text" name="adress" id="adress">
+                    </div>
+                    <div>
+                        <label for="adress-number">Número</label>
+                        <input type="number" name="adress-number" id="adress-number" maxlength="6">
+                    </div>
+                    <div>
+                        <label for="neighborhood">Bairro</label>
+                        <input type="text" name="neighborhood" id="neighborhood">
+                    </div>
+                    <div>
+                        <label for="city">Cidade</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label for="state">Estado</label>
+                        <select name="state" id="state">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="cancel-account">Cancelar</button>
+                <button class="create-account">Criar conta</button>
+            </div>
+           
+        </form>
+    </main>
+</body>
+</html>
