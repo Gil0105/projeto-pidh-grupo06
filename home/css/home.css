@@ -1,0 +1,208 @@
+.header {
+    display: block;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+body {
+    padding: 25px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.icon-person,
+.search-btn {
+    display: flex;
+    align-items: center;
+}
+
+.formulario {
+    border: white 1px;
+    border-radius: 50px;
+    background-color: #fafafa;
+    height: 44px;
+    padding: 0 15px 0 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+input,
+.search-btn {
+    border: none;
+    background: none;
+}
+
+.col-3 {
+    width: 33.33% !important;
+}
+
+.icon-person {
+    justify-content: right;
+}
+
+.center {
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
+
+.person {
+    font-size: 42px !important;
+}
+
+.menu {
+    margin-right: 10px;
+    font-size: 42px !important;
+}
+
+.banner {
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.banner img {
+    width: 100%;
+    -webkit-transform: translate(-0%, -20%);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.icone {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.mr-60 {
+    margin-right: 60px;
+}
+
+.contato {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.vitrine {
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.vitrine img {
+    width: 350px;
+    height: auto;
+}
+
+.destaques {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 42px;
+}
+
+.borda {
+    border: 1px black solid;
+}
+
+.produto {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.texto {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.botao {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 8px 30px;
+    text-decoration: none;
+}
+
+/* .usuario {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.usuario:hover {
+    overflow: visible;
+}
+
+.opcao {
+    max-height: 0;
+    padding: 0 1em;
+    color: black;
+    background: white;
+    transition: all .35s;
+} */
+.usuario {
+    list-style: none;
+    cursor: pointer;
+    padding-left: 0px;
+    width: 52px;
+}
+
+.usuario li ul {
+    visibility: hidden;
+    height: 0px;
+}
+
+.usuario li:hover ul {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    z-index: 11;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 40px;
+    transition: all .35s;
+    height: auto;
+}
+
+.right {
+    right: 40px;
+}
+
+.opcao a {
+    text-decoration: none;
+    color: black
+}
+
+.left {
+    left: 30px;
+}
+
+footer {
+    border-top: 1px solid black;
+}

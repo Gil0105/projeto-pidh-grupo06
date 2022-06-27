@@ -1,15 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/signUpPage/fontawesome-free-6.1.1-web/css/all.min.css">
-    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../home/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Cadastro</title>
 </head>
+
 <body>
+    <header class="header">
+        <nav class="search">
+            <div class="col-3 input">
+                <ul class="usuario">
+                    <li tabindex="0">
+                        <span class="material-symbols-outlined menu">
+                            menu
+                        </span>
+                        <ul class="left">
+                            <li class="opcao">
+                                <a href="..\productPage\productPage.html">Produtos</a>
+                            </li>
+                            <li class="opcao">
+                                <a href="#footer">Contato</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form action="" class="formulario">
+                    <input type="text" placeholder="Digite o que voce procura">
+                    <button class="search-btn">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <div class="col-3 title center">
+                <h1>GEEKJUNIOR</h1>
+            </div>
+            <div class="icon-person col-3">
+                <ul class="usuario">
+                    <li tabindex="0">
+                        <span class="material-symbols-outlined person">person</span>
+                        <ul class="right">
+                            <li class="opcao">
+                                <a href="">Entrar</a>
+                            </li>
+                            <li class="opcao">
+                                <a href="../signUpPage/signUpPage.html">Cadastrar</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
+
         <h1>Cadastro</h1>
         <form action="" class="form-client-signUp">
             <div class="access-data">
@@ -18,21 +79,25 @@
                 <div class="row-signUp">
                     <div>
                         <label for="email"><i class="fa-solid fa-envelope"></i> E-mail</label>
-                        <input id="email" maxlength="128" name="email" placeholder="Digite o seu email" type="text" class="input-signUp">
+                        <input id="email" maxlength="128" name="email" placeholder="Digite o seu email" type="text"
+                            class="input-signUp">
                     </div>
                     <div>
                         <label for="email-confirmation"><i class="fa-solid fa-envelope"></i> Confirmar E-mail</label>
-                        <input id="email-confirmation" maxlength="128" name="email" placeholder="Digite o seu email" type="email" class="input-signUp">
+                        <input id="email-confirmation" maxlength="128" name="email" placeholder="Digite o seu email"
+                            type="email" class="input-signUp">
                     </div>
                 </div>
                 <div class="row-signUp">
                     <div>
                         <label for="password"><i class="fa-solid fa-lock"></i> Criar senha</label>
-                        <input id="password" maxlength="128" name="password" placeholder="Digite sua senha" type="password" class="input-signUp">
+                        <input id="password" maxlength="128" name="password" placeholder="Digite sua senha"
+                            type="password" class="input-signUp">
                     </div>
                     <div>
                         <label for="password-confirmation"><i class="fa-solid fa-lock"></i> Confirmar Senha</label>
-                        <input id="password-confirmation" maxlength="128" name="password-confirmation" placeholder="Digite sua senha" type="password" class="input-signUp">
+                        <input id="password-confirmation" maxlength="128" name="password-confirmation"
+                            placeholder="Digite sua senha" type="password" class="input-signUp">
                     </div>
                 </div>
             </div>
@@ -65,9 +130,9 @@
                         <input type="date" name="birthdayDate" id="birthdayDate" maxlength="15">
                     </div>
                 </div>
-                <div class="adress-container"> 
+                <div class="adress-container">
                     <h2><i class="fa-solid fa-location-dot"></i> Endereço</h2>
-                    <hr>  
+                    <hr>
                     <div>
                         <label for="cep">CEP</label>
                         <input type="number" name="cep" id="cep" maxlength="9">
@@ -128,8 +193,31 @@
                 <button class="cancel-account">Cancelar</button>
                 <button class="create-account">Criar conta</button>
             </div>
-           
+
         </form>
+
     </main>
+    <footer class="flex-row">
+        <div class="col-3 mr-60">
+            <h2 class="title">GEEKJUNIOR</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. </p>
+        </div>
+        <div class="col-3 mr-60 mt-30 ml-30">
+            <a class="contato" name="footer" href="tel+00000000">Telefone: 0000-0000</a>
+            <a class="contato" href="mailto:geekjunior@contato.com">Email: geekjunior@contato.com </a>
+        </div>
+        <div class="col-3">
+            <p>Redes sociais</p>
+            <div class="flex-row">
+                <a href="#facebook"><img class="icone" src="../home/img/facebook.PNG" alt="icone facebook"></a>
+                <a href="#instagram"><img class="icone" src="../home/img/instagram.PNG" alt="icone instagram"></a>
+                <a href="#whatsapp"><img class="icone" src="../home/img/whatsapp.PNG" alt="icone whatsapp"></a>
+            </div>
+        </div>
+
+    </footer>
 </body>
+
 </html>
