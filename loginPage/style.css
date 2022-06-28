@@ -1,0 +1,164 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+hr {
+    margin-top: 2px;
+}
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main form .access-data {
+    box-shadow: 0 1px 6px 3px rgb(144 144 144 / 15%);
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    margin-top: 15px;
+    padding: 1.2rem 2rem 1.8rem 2rem;
+}
+
+.row-signUp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.row-signUp div {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.row-signUp div input {
+    width: 100%;
+    height: 32px;
+    margin-top: 3px;
+    padding-left: 8px;
+    border: 1px solid #e2e2e2;
+}
+
+.duoForm {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.personal-data,
+.adress-container {
+    width: 42%;
+    box-shadow: 0 1px 6px 3px rgb(144 144 144 / 15%);
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    margin-top: 15px;
+    padding: 1.2rem 2rem 1.8rem 2rem;
+}
+
+.personal-data div,
+.adress-container div {
+    margin-top: 15px;
+}
+
+.personal-data div input,
+.adress-container div input {
+    width: 100%;
+    height: 32px;
+    margin-top: 3px;
+    padding-left: 8px;
+    border: 1px solid #e2e2e2;
+}
+
+.personal-data div select,
+.adress-container div select {
+    width: 100%;
+    height: 32px;
+    margin-top: 3px;
+    padding-left: 8px;
+    border: 1px solid #e2e2e2;
+}
+
+.buttons {
+    display:flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: #361a5b;
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-weight: 600;
+    line-height: 38px;
+    cursor: pointer;
+}
+
+.buttons .cancel-account {
+    background-color: #e2e2e2;
+    color: #000;
+}
+
+.buttons .create-account {
+    width: 200px;
+}
+
+@media (max-width: 1200px) {
+    main {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .duoForm {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .personal-data,
+    .adress-container {
+        width: initial;
+    }
+
+    .personal-data div input,
+    .adress-container div input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .row-signUp {
+        flex-direction: column;
+    }
+
+    .row-signUp div {
+        width: 100%;
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buttons .cancel-account {
+        width: 32%;
+        padding: 1px 6px;
+    }
+
+    .buttons .create-account {
+        width: 65%;
+    }
+}
